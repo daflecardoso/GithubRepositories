@@ -1,12 +1,12 @@
 ## Architecture:
 
-![Architecture](https://github.com/daflecardoso/GithubRepositories/blob/master/GihubRepositories/final-architecture.png)
+![Architecture](https://github.com/daflecardoso/GithubRepositories/blob/master/GithubRepositories/final-architecture.png)
 
-![Empty state](https://github.com/daflecardoso/GithubRepositories/blob/master/GihubRepositories/empty_state_screen_shot.png)
+![Empty state](https://github.com/daflecardoso/GithubRepositories/blob/master/GithubRepositories/empty_state_screen_shot.png)
 
-![Data state](https://github.com/daflecardoso/GithubRepositories/blob/master/GihubRepositories/data_state_screen_shot.png)
+![Data state](https://github.com/daflecardoso/GithubRepositories/blob/master/GithubRepositories/data_state_screen_shot.png)
 
-![Detail Readme.md](https://github.com/daflecardoso/GithubRepositories/blob/master/GihubRepositories/detail_screen_shot.png)
+![Detail Readme.md](https://github.com/daflecardoso/GithubRepositories/blob/master/GithubRepositories/detail_screen_shot.png)
 
 ## Installation:
 
