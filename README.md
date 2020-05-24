@@ -1,16 +1,22 @@
 ## Architecture:
 
-![Architecture](https://github.com/daflecardoso/GihubRepositories/blob/master/GihubRepositories/final-architecture.png)
+![Architecture](https://github.com/daflecardoso/GithubRepositories/blob/master/GihubRepositories/final-architecture.png)
+
+![Empty state](https://github.com/daflecardoso/GithubRepositories/blob/master/GihubRepositories/empty_state_screen_shot.png)
+
+![Data state](https://github.com/daflecardoso/GithubRepositories/blob/master/GihubRepositories/data_state_screen_shot.png)
+
+![Detail Readme.md](https://github.com/daflecardoso/GithubRepositories/blob/master/GihubRepositories/detail_screen_shot.png)
 
 ## Installation:
 
-1 - git clone https://github.com/daflecardoso/GihubRepositories
+1 - git clone https://github.com/daflecardoso/GithubRepositories
 
 2 - cd /GihubRepositories
 
 3 - pod install
 
-4 - open GihubRepositories.xcworkspace
+4 - open GithubRepositories.xcworkspace
 
 ## Project Libs:
 
@@ -36,7 +42,7 @@
 
 2 - command + 6
 
-3 - right click on GihubRepositoriesTests and Run GihubRepositoriesTests
+3 - right click on GithubRepositoriesTests and Run GithubRepositoriesTests
 
 ## How to run UI tests?
 
@@ -44,4 +50,4 @@
 
 2 - command + 6
 
-3 - right click on GihubRepositoriesUITests and Run GihubRepositoriesUITests
+3 - right click on GithubRepositoriesUITests and Run GithubRepositoriesUITests

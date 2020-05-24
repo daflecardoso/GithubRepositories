@@ -8,7 +8,7 @@
 
 import XCTest
 import RxSwift
-@testable import GihubRepositories
+@testable import GithubRepositories
 
 class HomeViewModelTests: XCTestCase {
     
@@ -52,8 +52,14 @@ class HomeViewModelTests: XCTestCase {
         
         let repositories = viewModel.repositories
         
+        var isHidden: Bool!
+        viewModel.isHiddenEmptyView.drive(onNext: { _isHidden in
+            isHidden = _isHidden
+        }).disposed(by: disposeBag)
+        
         viewModel.fetch(query: "swift")
         
+        XCTAssertFalse(isHidden)
         XCTAssertEqual(repositories.count, 0)
     }
     
@@ -77,7 +83,7 @@ class HomeViewModelTests: XCTestCase {
         
         XCTAssertEqual(repositories.count, 30)
         let issue = repositories.first!
-        XCTAssertEqual(issue.fullName, "apple/swift")
+        XCTAssertEqual(issue.fullName, "FAKE DATA 1")
         XCTAssertEqual(issue.name, "swift")
         XCTAssertEqual(issue.description, "The Swift Programming Language")
         XCTAssertEqual(issue.watchers, 51749)

@@ -20,6 +20,10 @@ class HomeViewModel: BaseViewModel {
         return self._onFetched.asDriver(onErrorJustReturn: ())
     }
     
+    private let _isHiddenEmptyView = PublishSubject<Bool>()
+    var isHiddenEmptyView: Driver<Bool> {
+        return self._isHiddenEmptyView.asDriver(onErrorJustReturn: true)
+    }
     
     private var totalCount: Int = 0
     private var query: String = ""
@@ -55,6 +59,8 @@ class HomeViewModel: BaseViewModel {
                 self.repositories.append(contentsOf: response.items ?? [])
                 self._onFetched.onNext(())
                 self.isRequesting = false
+                self._isHiddenEmptyView
+                    .onNext(self.totalCount > 0 && !self.query.isEmpty)
             }, onError: handleError(error:))
             .disposed(by: disposeBag)
     }

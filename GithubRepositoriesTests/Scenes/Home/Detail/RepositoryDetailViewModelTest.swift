@@ -8,7 +8,7 @@
 
 import XCTest
 import RxSwift
-@testable import GihubRepositories
+@testable import GithubRepositories
 
 class RepositoryDetailViewModelTest: XCTestCase {
     

@@ -8,7 +8,7 @@
 
 import Foundation
 import RxSwift
-@testable import GihubRepositories
+@testable import GithubRepositories
 
 class GithubServiceMock: GithubServiceContract {
     

@@ -8,7 +8,7 @@
 
 import XCTest
 import RxSwift
-@testable import GihubRepositories
+@testable import GithubRepositories
 
 class HomeViewControllerTests: XCTestCase {
     
@@ -24,6 +24,7 @@ class HomeViewControllerTests: XCTestCase {
             .first?
             .rootViewController = viewController
         XCTAssertEqual(viewController.tableView.numberOfRows(inSection: 0), 2)
+        XCTAssertEqual(viewController.emptyView.isHidden, true)
     }
     
     func test_number_of_lines_in_tableview_with_empty_data() {
@@ -48,6 +49,7 @@ class HomeViewControllerTests: XCTestCase {
             .first?
             .rootViewController = viewController
         XCTAssertEqual(viewController.tableView.numberOfRows(inSection: 0), 0)
+        XCTAssertEqual(viewController.emptyView.isHidden, true)
     }
     
     func test_fetch_more_data() {
@@ -64,5 +66,6 @@ class HomeViewControllerTests: XCTestCase {
         viewModel.fetchMoreItems(indexPath: IndexPath(row: 2, section: 0))
         
         XCTAssertEqual(viewController.tableView.numberOfRows(inSection: 0), 4)
+        XCTAssertEqual(viewController.emptyView.isHidden, true)
     }
 }

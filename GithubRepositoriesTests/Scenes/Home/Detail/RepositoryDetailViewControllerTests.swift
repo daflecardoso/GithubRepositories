@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import GihubRepositories
+@testable import GithubRepositories
 
 class RepositoryDetailViewControllerTests: XCTestCase {
 

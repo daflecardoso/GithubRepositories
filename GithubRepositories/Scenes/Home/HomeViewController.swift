@@ -14,6 +14,7 @@ class HomeViewController: BaseViewController {
     
     @IBOutlet weak var tableView: UITableView!
     private let searchController = UISearchController(searchResultsController: nil)
+    let emptyView: RepositoriesEmptyView = RepositoriesEmptyView.fromNib()
     
     override var baseViewModel: BaseViewModelContract? {
         return self.viewModel
@@ -34,6 +35,7 @@ class HomeViewController: BaseViewController {
     private func setup() {
         self.setupTableView()
         self.setupSearchView()
+        self.setupEmptyView()
     }
     
     private func setupSearchView() {
@@ -55,6 +57,23 @@ class HomeViewController: BaseViewController {
             .onFetched
             .drive(onNext: { [unowned self] in
                 self.tableView.reloadData()
+            }).disposed(by: disposeBag)
+    }
+    
+    private func setupEmptyView() {
+        self.emptyView.translatesAutoresizingMaskIntoConstraints = false
+        self.view.insertSubview(emptyView, belowSubview: super.hud)
+        self.emptyView.isHidden = true
+        self.view.addConstraints([
+            self.emptyView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            self.emptyView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            self.emptyView.topAnchor.constraint(equalTo: view.topAnchor),
+            self.emptyView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+        ])
+        self.viewModel
+            .isHiddenEmptyView
+            .drive(onNext: { [unowned self] isHidden in
+                self.emptyView.isHidden = isHidden
             }).disposed(by: disposeBag)
     }
     

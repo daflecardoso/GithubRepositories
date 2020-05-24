@@ -4,7 +4,7 @@
 # ignore all warnings from all pods
 inhibit_all_warnings!
 
-target 'GihubRepositories' do
+target 'GithubRepositories' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
@@ -15,14 +15,14 @@ target 'GihubRepositories' do
   pod 'NotificationBannerSwift', '2.0.1'
   pod 'Kingfisher', '~> 5.0'
 
-  target 'GihubRepositoriesTests' do
+  target 'GithubRepositoriesTests' do
     inherit! :search_paths
     # Pods for testing
     pod 'RxBlocking', '~> 5'
     pod 'RxTest', '~> 5'
   end
 
-  target 'GihubRepositoriesUITests' do
+  target 'GithubRepositoriesUITests' do
     # Pods for testing
   end
 
