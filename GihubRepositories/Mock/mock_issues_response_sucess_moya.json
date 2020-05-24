@@ -1,0 +1,18 @@
+{
+  "name": "README.md",
+  "path": "README.md",
+  "sha": "d8bfb65a54a9d8fbe81facd01daa60fcc0a58e98",
+  "size": 20400,
+  "url": "https://api.github.com/repos/apple/swift/contents/README.md?ref=master",
+  "html_url": "https://github.com/apple/swift/blob/master/README.md",
+  "git_url": "https://api.github.com/repos/apple/swift/git/blobs/d8bfb65a54a9d8fbe81facd01daa60fcc0a58e98",
+  "download_url": "https://raw.githubusercontent.com/apple/swift/master/README.md",
+  "type": "file",
+  "content": "",
+  "encoding": "base64",
+  "_links": {
+    "self": "https://api.github.com/repos/apple/swift/contents/README.md?ref=master",
+    "git": "https://api.github.com/repos/apple/swift/git/blobs/d8bfb65a54a9d8fbe81facd01daa60fcc0a58e98",
+    "html": "https://github.com/apple/swift/blob/master/README.md"
+  }
+}
