@@ -3,10 +3,11 @@
 <img src="https://raw.githubusercontent.com/daflecardoso/GithubRepositories/master/GithubRepositories/final-architecture.png">
 
 
-| Empty state   | Data state | Detail README.md
-| ---    | ---       |
-| <img src="https://raw.githubusercontent.com/daflecardoso/GithubRepositories/master/GithubRepositories/empty_state_screen_shot.png" width="100">  |   <img src="https://raw.githubusercontent.com/daflecardoso/GithubRepositories/master/GithubRepositories/data_state_screen_shot.png" width="100">  |  <img src="https://raw.githubusercontent.com/daflecardoso/GithubRepositories/master/GithubRepositories/detail_screen_shot.png" width="100">  |
+<img src="https://raw.githubusercontent.com/daflecardoso/GithubRepositories/master/GithubRepositories/empty_state_screen_shot.png" width="200">
 
+ <img src="https://raw.githubusercontent.com/daflecardoso/GithubRepositories/master/GithubRepositories/data_state_screen_shot.png" width="200">
+ 
+ <img src="https://raw.githubusercontent.com/daflecardoso/GithubRepositories/master/GithubRepositories/detail_screen_shot.png" width="200">
 
 ## Installation:
 
