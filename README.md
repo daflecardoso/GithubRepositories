@@ -1,12 +1,12 @@
 ## Architecture:
 
-![Architecture](https://github.com/daflecardoso/GithubRepositories/blob/master/GithubRepositories/final-architecture.png)
+<img src="https://raw.githubusercontent.com/daflecardoso/GithubRepositories/master/GithubRepositories/final-architecture.png">
 
-![Empty state](https://github.com/daflecardoso/GithubRepositories/blob/master/GithubRepositories/empty_state_screen_shot.png)
 
-![Data state](https://github.com/daflecardoso/GithubRepositories/blob/master/GithubRepositories/data_state_screen_shot.png)
+| Empty state   | Data state | Detail README.md
+| ---    | ---       |
+| <img src="https://raw.githubusercontent.com/daflecardoso/GithubRepositories/master/GithubRepositories/empty_state_screen_shot.png" width="100">  |   <img src="https://raw.githubusercontent.com/daflecardoso/GithubRepositories/master/GithubRepositories/data_state_screen_shot.png" width="100">  |  <img src="https://raw.githubusercontent.com/daflecardoso/GithubRepositories/master/GithubRepositories/detail_screen_shot.png" width="100">  |
 
-![Detail Readme.md](https://github.com/daflecardoso/GithubRepositories/blob/master/GithubRepositories/detail_screen_shot.png)
 
 ## Installation:
 
@@ -51,3 +51,4 @@
 2 - command + 6
 
 3 - right click on GithubRepositoriesUITests and Run GithubRepositoriesUITests
+
